@@ -21,38 +21,6 @@
           $animate.addClass('slideIn');
         }, 300);
       });
-
-      // Audio Bumping
-      var bufferSize = 32;
-      var interval = 100;
-      var maxFluctuation = 64;
-
-      var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-      var analyser = audioCtx.createAnalyser();
-      var source = audioCtx.createMediaElementSource($('audio')[0]);
-      
-      var bassNode = audioCtx.createBiquadFilter();
-      bassNode.type = 'lowpass';
-      bassNode.frequency.value = 75;
-      bassNode.gain.value = 100;
-
-      source.connect(bassNode);
-      bassNode.connect(analyser);
-      source.connect(audioCtx.destination);
-
-      analyser.fftSize = bufferSize;
-      var bufferLength = analyser.frequencyBinCount;
-      var dataArray = new Uint8Array(bufferLength);
-      
-      setInterval(function() {
-        analyser.getByteTimeDomainData(dataArray)
-        var total = 0;
-        for(var i = 0; i < dataArray.length; i++) {
-          total += dataArray[i];
-        }
-        var avg = Math.ceil(total / dataArray.length);
-        var fluctuation = maxFluctuation * (Math.pow(avg, 2) / Math.pow(256, 2));
-
         $('#logo').animate(
           {
             width: 200 + fluctuation
