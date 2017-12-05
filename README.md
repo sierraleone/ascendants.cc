@@ -1,4 +1,4 @@
 # sierraleone1.github.io
 
 Official Site - 
-cmpnds.team
+http://cmpnds.team
