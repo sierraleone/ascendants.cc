@@ -115,10 +115,7 @@ canvas{
   font-size: 40px;
   padding-top: 30px;
   background-color: #05060f;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+	opacity: 0;
 }
 
 #divider {
