@@ -114,8 +114,7 @@ canvas{
   text-align: center;
   font-size: 40px;
   padding-top: 30px;
-  background-color: #05060f;
-	opacity: 0;
+  background-color:transparent;
 }
 
 #divider {
