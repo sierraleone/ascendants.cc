@@ -71,6 +71,12 @@ canvas{
   margin-left: 5px;
 }
 
+#quoteText {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
 #stats{
   border-radius: 3px 3px 0 0;
   overflow: hidden;
