@@ -169,7 +169,7 @@ body {
 
 #logo {
     position: fixed;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     max-width: 50%;
@@ -177,15 +177,7 @@ body {
 	opacity: 0;
 }
 
-#sellyButton {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    max-width: 50%;
-    width: 200px;
-	opacity: 0;
-}
+
 
 #shadow {
 	position: fixed;
