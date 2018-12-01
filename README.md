@@ -1,2 +1,2 @@
-# http://cmpnds.team
+# http://ascendants.cc
 
