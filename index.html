@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>SLEEP FOR THE WEAK</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RUST | NEXUS SERVERS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
+    <div id="particles-js">
+        <div class="btext">
+            <h1>Rust Nexus</h1>
+            <p>Welcome to Nexus, a place to enjoy a well moderated network of Rust servers.</p>
+            <a href="index.html" class="btn">Join Server</a>
+            <a href="https://discord.gg/gPEHaH" class="btn">Discord</a>
+        </div>
+    </div>
 
-<!-- count particles -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-
-<!-- particles.js container -->
-<div id="particles-js"></div>
-
-<!-- scripts -->
-<script src="../particles.js"></script>
-<script src="js/app.js"></script>
-
-<!-- stats.js -->
-<script src="js/lib/stats.js"></script>
-
-<audio autoplay loop id="video">
-        <source src="img/Phantogram.mp3" type="audio/mp3">
-    </audio>
+    <script>
+        particlesJS.load('particles-js', 'particles.json',
+        function(){
+            console.log('particles.json loaded...')
+        })
+    </script>
 </body>
 </html>
